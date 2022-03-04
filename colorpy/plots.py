@@ -126,8 +126,8 @@ from __future__ import print_function
 import math
 import numpy, pylab
 
-import colormodels
-import ciexyz
+from colorpy import colormodels
+from colorpy import ciexyz
 
 # Miscellaneous utilities for plots
 

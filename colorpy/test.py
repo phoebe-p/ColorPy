@@ -31,12 +31,13 @@ from __future__ import print_function
 
 import unittest
 
-import test_colormodels
-import test_ciexyz
-import test_illuminants
-import test_blackbody
-import test_rayleigh
-import test_thinfilm
+from colorpy import test_colormodels
+from colorpy import test_ciexyz
+from colorpy import test_illuminants
+from colorpy import test_blackbody
+from colorpy import test_rayleigh
+from colorpy import test_thinfilm
+
 
 def test ():
     # no test cases for plots/misc - but figures.py will exercise those.

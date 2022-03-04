@@ -29,9 +29,9 @@ import numpy
 import random
 import unittest
 
-import ciexyz
-import rayleigh
-import illuminants
+from colorpy import ciexyz
+from colorpy import rayleigh
+from colorpy import illuminants
 
 
 class TestRayleigh(unittest.TestCase):

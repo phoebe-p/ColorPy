@@ -84,10 +84,10 @@ along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
 import math, cmath, numpy
 
-import colormodels
-import ciexyz
-import illuminants
-import plots
+from colorpy import colormodels
+from colorpy import ciexyz
+from colorpy import illuminants
+from colorpy import plots
 
 class thin_film:
     '''A thin film of dielectric material.'''
@@ -223,7 +223,7 @@ def figures ():
     # Simple patch plot. This is not all that interesting.
     thickness_nm_list = numpy.linspace(0.0, 750.0, 36)
     illuminant = illuminants.get_illuminant_D65()
-    illuminants.scale_illuminant (illuminant, 9.50)
+    illuminants.scale_illuminant (illuminant, 1)
     thinfilm_patch_plot (1.500, 1.003, 1.500, thickness_nm_list,
         illuminant, 'ThinFilm Patch Plot', 'ThinFilm-Patch')
 

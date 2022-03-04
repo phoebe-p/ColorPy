@@ -63,9 +63,9 @@ along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
 import math, numpy
 
-import colormodels
-import ciexyz
-import plots
+from colorpy import colormodels
+from colorpy import ciexyz
+from colorpy import plots
 
 # Some sample lists of displayable RGB colors as hex strings
 
